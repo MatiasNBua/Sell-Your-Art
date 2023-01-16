@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+ :root {
+    --color: rgb(255, 255, 255);
+    background: rgb(2,0,36);
+    background: linear-gradient(347deg, rgba(2,0,36,1) 0%, rgba(5,12,70,1) 10%, rgba(5,12,71,1) 16%, rgba(9,30,121,1) 48%, rgba(0,212,255,1) 100%);
+    --color-imput: rgb(73, 195, 179);
+} 
+
+:root.light {
+  --color: black;
+  --back-color: background: rgb(83,95,169);
+  background: linear-gradient(180deg, rgba(83,95,169,1) 0%, rgba(121,141,222,1) 23%, rgba(86,177,200,1) 51%, rgba(93,221,200,1) 81%);
+  --back-color-note: rgb(55, 211, 177);
+  --color-imput: rgb(204, 64, 64);
+}
+ 
+* {
+  font-family: Lato;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+
+}
+
+
+label{
+  font-size: 24px;
+  color: var(--color)
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  -webkit-text-fill-color: rgba(146, 146, 146, 0.874);
+  padding: 8px
+}
+
+.button{
+  background-color: #f87060;
+  border: none;
+  padding: 8px;
+  border-radius: 30px;
+  width: 100px;
+  color: white;
+}
+
+.buttonLogin:hover{background-color: #bfd7ea;
+transition: 500ms;
+color:#1f2b35;
+}
+
+.anchor{
+  text-decoration: none;
+  color: white;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__field{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}

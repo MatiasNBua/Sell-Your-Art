@@ -1,0 +1,10 @@
+.buttons-register{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .register-page{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+  }

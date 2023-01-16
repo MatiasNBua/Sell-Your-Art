@@ -1,0 +1,9 @@
+.buttons-login{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.loginPageContainer{
+margin-top: 200px;
+}
+  
