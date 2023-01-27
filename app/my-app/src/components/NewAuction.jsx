@@ -1,6 +1,7 @@
     import Loggito from '../utils/Loggito'
     import withContext from '../utils/withContext'
     import createAuction from '../logics/createAuction'
+    import './NewAuction.css'
 
     function NewAuction({ onNewAuction, context: { handleFeedback } }) {
         const logger = new Loggito('newAuction')

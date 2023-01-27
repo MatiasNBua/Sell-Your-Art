@@ -1,7 +1,9 @@
 import { validateEmail, validatePassword, validateCallbacks } from 'validators'
 import { AuthError, ClientError, ServerError, UnknownError } from 'errors'
 
-const API_URL = process.env.REACT_APP_API_URL
+// const API_URL = process.env.REACT_APP_API_URL
+
+const API_URL = "http://localhost:8080/api"
 
 /** 
  * Checks user credentials against database
@@ -20,7 +22,7 @@ function authenticateUser(email, password, callback) {
     const xhr = new XMLHttpRequest()
 
     // response
-
+    debugger
     xhr.onload = function () {
         const status = xhr.status
 
@@ -28,14 +30,14 @@ function authenticateUser(email, password, callback) {
 
         const { error, token } = JSON.parse(json)
 
-        // if (status >= 500)
-        //     callback(new ServerError(error))
-        // else if (status === 401)
-        //     callback(new AuthError(error))
-        // else if (status >= 400)
-        //     callback(new ClientError(error))
-        // else if (status === 200)
-        //     callback(null, token)
+        if (status >= 500)
+            callback(new ServerError(error))
+        else if (status === 401)
+            callback(new AuthError(error))
+        else if (status >= 400)
+            callback(new ClientError(error))
+        else if (status === 200)
+            callback(null, token)
 
         switch(true) {
             case (status >= 500):
@@ -65,7 +67,10 @@ function authenticateUser(email, password, callback) {
 
     xhr.setRequestHeader('Content-type', 'application/json')
 
-    xhr.send(`{ "email": "${email}", "password": "${password}" }`)
+    const json = JSON.stringify({ email, password })
+
+    xhr.send(json)
+    // xhr.send(`{ "email": "${email}", "password": "${password}" }`)
 }
 
 export default authenticateUser

@@ -10,7 +10,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-} */
-/* .updateProfileCcontainer{
+} 
+.updateProfileCcontainer{
     height: 100%;
 } */
+.updateProfileCcontainer{
+    margin-top: 20vh;
+}

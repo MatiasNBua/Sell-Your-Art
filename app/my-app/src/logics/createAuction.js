@@ -1,5 +1,5 @@
-const API_URL = process.env.REACT_APP_API_URL;
-
+// const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = "http://localhost:8080/api"
 function createAuction(token,title,description,value,image,finalDate,callback) {
   if (typeof token !== "string") throw new TypeError("token is not a string");
   if (token.trim().length === 0) throw new Error("token is empty or blank");
@@ -24,8 +24,8 @@ function createAuction(token,title,description,value,image,finalDate,callback) {
   xhr.setRequestHeader("Authorization", `Bearer ${token}`);
   xhr.setRequestHeader("Content-type", "application/json");
 
-  const auction = { title, description, value, image, finalDate /*initialDate*/ };
-  const json = JSON.stringify(auction)
+  // const auction = { title, description, value, image, finalDate };
+  const json = JSON.stringify({ title, description, value, image, finalDate })
 
   xhr.send(json);
 }

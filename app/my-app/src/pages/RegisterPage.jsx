@@ -30,6 +30,22 @@ function RegisterPage({ onLinkClick, onRegisterFormSubmit, context: { handleFeed
     const handleRegisterFormSubmit = event => {
         event.preventDefault()
 
+        // const form = event.target
+
+        // const nameImput = form.name
+        // const lastnameImput = form.lastname
+        // const emailImput = form.email
+        // const passwordImput = form.password
+        // const birthImput = form.birth
+        // const phonenumberImput = form.phonenumber
+
+        // const name = nameImput.value
+        // const lastname = lastnameImput.value
+        // const email = emailImput.value
+        // const password = passwordImput.value
+        // const birth = birthImput.value
+        // const phonenumber = phonenumberImput.value
+
         const {
             target: form,
             target: {

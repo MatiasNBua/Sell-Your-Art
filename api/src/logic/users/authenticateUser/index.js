@@ -3,6 +3,7 @@ const { NotFoundError, AuthError, SystemError } = require('errors')
 const { validateEmail, validatePassword } = require('validators')
 
 function authenticateUser(email, password) {
+    debugger
     validateEmail(email)
     validatePassword(password)
 

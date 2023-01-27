@@ -8,7 +8,7 @@
     "nodemon": "npx nodemon ./src",
     "test": "npx jest --runInBand --setTimeout=60000 src/logic",
     "test-inspect-brk": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --setTimeout=60000 src/logic",
-    "start-inspect": "node --inspect-brk src",
+    "debug": "node --inspect-brk src",
     "test-coverage": "npx jest --runInBand --setTimeout=60000 --collectCoverage src/logic/"
   },
   "keywords": [],

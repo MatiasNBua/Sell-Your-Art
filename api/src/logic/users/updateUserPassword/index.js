@@ -4,14 +4,14 @@ const { verifyObjectIdString } = require('../../../utils')
 const { AuthError, NotFoundError, SystemError} = require('errors')
 
 
-module.exports = function updateUserPassword( userId, oldPassword, newPassword, newPasswordRepeat) {
-
-    verifyObjectIdString(userId)
+function updateUserPassword( userId, oldPassword, newPassword, newPasswordRepeat) {
+    debugger
     validatePassword(oldPassword)
     validatePassword(newPassword)
     validatePassword(newPasswordRepeat)
+    verifyObjectIdString(userId)
    
-    return User.findById({ _id: `${userId}` })
+    return User.findById({_id:`${userId}`})
         .catch(error => {
             throw new SystemError(error.message)
         })
@@ -29,3 +29,5 @@ module.exports = function updateUserPassword( userId, oldPassword, newPassword, 
         .then(() => { })
 
 }
+
+module.exports = updateUserPassword

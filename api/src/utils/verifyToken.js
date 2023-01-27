@@ -1,7 +1,9 @@
-const { validateText } = require('validators')
 const { verify } = require('jsonwebtoken')
+const { validateText } = require('validators')
 
-const { JWT_SECRET } = process.env
+
+// const { JWT_SECRET } = process.env
+const JWT_SECRET = "Dan: copié el código de Mónica!"
 
 function verifyToken(req) {
     const { headers: { authorization } } = req

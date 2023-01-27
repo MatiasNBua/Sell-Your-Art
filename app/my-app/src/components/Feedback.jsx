@@ -1,8 +1,8 @@
 import './Feedback.css'
-import Loggito from '../utils/Loggito'
+// import Loggito from '../utils/Loggito'
 
 function Feedback ({ level, message, onClick}) {
-    const logger = new Loggito ('Feedback')
+    // const logger = new Loggito ('Feedback')
 
     return <div className={`Feedback container Feedback--${level? level : 'info'}`}>
         <div className="Feedback__box container container--spaced container--padded">

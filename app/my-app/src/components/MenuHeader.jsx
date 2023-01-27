@@ -1,4 +1,4 @@
-// import './Menu.css'
+import './MenuHeader.css'
 import IconButton from './IconButton'
 import Loggito from '../utils/Loggito'
 import withContext from '../utils/withContext'
@@ -16,11 +16,11 @@ function Menu({view, onLogoutClick,onSettingClick, context: { toggleTheme }}) {
     return <div className="SettingsMenuContainer">
     <ul className="menuContainer">
             {view !== 'settings' && <li className="Menu__item">
-            <IconButton text="settings" onClick={handleSettingClick} />
+            <IconButton text="settings" onClick={handleSettingClick} /> Settings
             </li>}
 
             <li className="Menu__item">
-            <IconButton text="logout" onClick={handleLogoutClick} />
+            <IconButton text="logout" onClick={handleLogoutClick} /> Logout
             </li>
         </ul>
         </div>

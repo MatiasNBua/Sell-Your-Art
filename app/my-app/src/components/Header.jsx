@@ -40,9 +40,9 @@ function Header ({ onLogoutClick, onSettingClick, view: viewHome, onSearch}) {
 
     return <header className="HeaderContainer">
         <div className="HeaderMenuContainer">
-            {view !== 'menu' && <SearchAuctions onQuery={onSearch}/>}
-            { view === null && <IconButton text="menu" onClick={handleMenuClick} />}
-            { view === 'menu' && <IconButton text="close" onClick={handleCloseClick} />}
+            {   view !== 'menu' && <SearchAuctions onQuery={onSearch}/>}
+            {   view === null && <IconButton text="menu" onClick={handleMenuClick} />}
+            {   view === 'menu' && <IconButton text="close" onClick={handleCloseClick} />}
         </div>
 
         { view === 'menu' && <MenuHeader onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick} view={viewHome} />}

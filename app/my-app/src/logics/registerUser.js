@@ -19,6 +19,7 @@ function registerUser(name,lastname, email, password, birth, phonenumber, callba
 
     const xhr = new XMLHttpRequest
 
+    debugger
     xhr.onload = function() {
         const status = xhr.status
 
@@ -32,11 +33,14 @@ function registerUser(name,lastname, email, password, birth, phonenumber, callba
 
     // request
     
-    xhr.open('POST', `${API_URL}/users`)
+    xhr.open('POST', "http://localhost:8080/api/users")
 
     xhr.setRequestHeader('Content-type', 'application/json')
 
-    xhr.send(`{ "name": "${name}", "lastname": "${lastname}", "email": "${email}", "password": "${password}","birth": "${birth}", "phonenumber": "${phonenumber}" }`)
+    const json = JSON.stringify({name,lastname,email,password,birth,phonenumber})
+
+    xhr.send(json)
+    // xhr.send(`{"name": "${name}", "lastname": "${lastname}", "email": ${email}, "password": ${password}, "birth": ${birth}, "phonenumber": ${phonenumber}}`)
 }
 
 export default registerUser

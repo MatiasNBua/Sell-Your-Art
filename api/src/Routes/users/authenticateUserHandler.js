@@ -4,11 +4,14 @@ const { sign } = require('jsonwebtoken')
 const logger = createLogger(module)
 const { JWT_SECRET, JWT_EXP } = process.env
 
+
+
 module.exports = (req, res) => {
+    debugger
     runWithErrorHandling(() => {
         const { body: { email, password } } = req
 
-        return authenticateUser(email, password )
+        return authenticateUser( email, password )
             .then(userId => {
                 const token = sign({ sub: userId }, JWT_SECRET, { expiresIn: JWT_EXP })
 

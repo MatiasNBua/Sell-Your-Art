@@ -1,6 +1,7 @@
 import Loggito from '../utils/Loggito'
 import withContext from '../utils/withContext'
 import updateUserPassword from '../logics/updateUserPassword'
+import "./Setting.css"
 
 function Setting({ onCloseClick, context: { handleFeedback }}) {
     const logger = new Loggito('Setting')

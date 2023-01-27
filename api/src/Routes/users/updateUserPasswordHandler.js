@@ -3,6 +3,7 @@ const { users: { updateUserPassword } } = require('../../logic')
 const logger = createLogger(module)
 
 module.exports = (req, res) => {
+    debugger
     runWithErrorHandling(() => {
 
         const userId = verifyToken(req)

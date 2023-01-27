@@ -5,7 +5,7 @@ const { createLogger } = require('./utils')
 const logger = createLogger(module)
 const cors = require('cors')
 const { name, version } = require('../package.json')
-const { env: {MONGO_URL, PORT }} = process
+const { env: { MONGO_URL, PORT } } = process
 
 
 connect(MONGO_URL)
@@ -24,7 +24,7 @@ connect(MONGO_URL)
 
         api.use('/api', usersRouter,auctionRouter )
         
-
+        
         api.listen(PORT, () => logger.info(`${name} v${version} started and listening in port ${PORT}`))
 
         process.on('SIGINT', () => {

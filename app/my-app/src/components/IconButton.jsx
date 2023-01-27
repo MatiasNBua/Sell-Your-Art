@@ -1,4 +1,5 @@
 import Loggito from '../utils/Loggito'
+import './IconButton.css'
 
 function IconButton({ onClick, text }) {
     const logger = new Loggito ('return')
