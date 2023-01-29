@@ -1,20 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
- :root {
-    --color: rgb(255, 255, 255);
-    background: rgb(2,0,36);
-    background: linear-gradient(347deg, rgba(2,0,36,1) 0%, rgba(5,12,70,1) 10%, rgba(5,12,71,1) 16%, rgba(9,30,121,1) 48%, rgba(0,212,255,1) 100%);
-    --color-imput: rgb(73, 195, 179);
-} 
+:root {
+  background: rgb(41, 36, 36);
+  --color: rgb(255, 255, 255);
+  --input: rgb(148, 148, 148);
+  --button: #e67568;
+  --AccColor: rgb(128, 131, 131);
+  --borderAccount: rgb(122, 199, 189);
+  --headerColor: black;
+  --menuIcons: white;
+  --conainerAuction: black;
+  --iconsFooter: white;
+
+
+
+  --oposite: rgb(255, 255, 255);
+  --color-imput: rgb(73, 195, 179);
+}
 
 :root.light {
-  --color: black;
-  --back-color: background: rgb(83,95,169);
-  background: linear-gradient(180deg, rgba(83,95,169,1) 0%, rgba(121,141,222,1) 23%, rgba(86,177,200,1) 51%, rgba(93,221,200,1) 81%);
+  background: rgb(154, 203, 218);
+  --color: rgb(0, 0, 0);
+  --input: rgb(0, 0, 0);
+  --button: #803d3d;
+  --AccColor: rgba(138, 138, 138, 0.25);
+  --borderAccount: rgb(122, 199, 189);
+  --headerColor: rgb(185, 219, 211);
+  --menuIcons: black;
+  --conainerAuction: rgb(255, 255, 255);
+  --iconsFooter: black;
+
+  --oposite: rgb(0, 0, 0);
+  --back-color: rgb(255, 255, 255);
   --back-color-note: rgb(55, 211, 177);
-  --color-imput: rgb(204, 64, 64);
+  --color-imput: rgb(194, 56, 56);
 }
- 
+
 * {
   font-family: Lato;
   box-sizing: border-box;
@@ -27,48 +48,51 @@ html {
 }
 
 
-label{
+label {
   font-size: 24px;
   color: var(--color)
 }
 
-input{
+input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid var(--color);
   border-radius: 8px;
-  -webkit-text-fill-color: rgba(146, 146, 146, 0.874);
+  -webkit-text-fill-color: var(--input);
   padding: 8px
 }
 
-.button{
-  background-color: #f87060;
+.button {
+  background-color: var(--button);
   border: none;
   padding: 8px;
   border-radius: 30px;
-  width: 100px;
-  color: white;
+  width: 140px;
+  color: white
 }
 
-.buttonLogin:hover{background-color: #bfd7ea;
-transition: 500ms;
-color:#1f2b35;
+.buttonLogin:hover {
+  background-color: #bfd7ea;
+  transition: 500ms;
+  color: #1f2b35;
 }
 
-.anchor{
+.anchor {
   text-decoration: none;
   color: white;
 }
 
-.form{
+.form {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 20px;
 }
-.form__field{
+
+.form__field {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  color: var(--oposite);
 }

@@ -33,7 +33,7 @@ function registerUser(name,lastname, email, password, birth, phonenumber, callba
 
     // request
     
-    xhr.open('POST', "http://localhost:8080/api/users")
+    xhr.open('POST', `${API_URL}/users`)
 
     xhr.setRequestHeader('Content-type', 'application/json')
 

@@ -15,19 +15,20 @@
     height: 80px;
     width: 300px;
     border: 1px solid #bfd7ea;
-    border-radius: 16px;
+    border-radius: 12px;
     align-items: center;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.648);
+    box-shadow: 4px 4px 13px rgb(255 255 255)
   }
   
   .Feedback--error > .Feedback__box {
-    height: 125px;
+    height: 230px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 42px;
     background-color: #bfd7ea;
 } 
   

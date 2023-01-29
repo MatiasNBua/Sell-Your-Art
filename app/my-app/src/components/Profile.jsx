@@ -50,7 +50,7 @@ function Profile({ onCloseClick, context: { handleFeedback }}) {
       
     <form className="update-password-form form" onSubmit={handleProfileFormSubmit}>
         <div className="form__field">
-        <h3 className="tittleProfile"> Your profile </h3>
+        <h2 className="tittleProfile"> Your profile </h2>
         
         </div>
 

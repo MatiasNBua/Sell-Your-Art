@@ -1,3 +1,8 @@
-.Menu__item{
-   margin: 0 15px 0 15px;
+.Menu__item {
+   gap: 12px;
+   padding: 8px 20px 8px 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
 }

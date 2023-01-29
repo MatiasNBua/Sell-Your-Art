@@ -1,5 +1,5 @@
-// const API_URL = process.env.REACT_APP_API_URL;
-const API_URL = "http://localhost:8080/api"
+const API_URL = process.env.REACT_APP_API_URL;
+
 function createAuction(token,title,description,value,image,finalDate,callback) {
   if (typeof token !== "string") throw new TypeError("token is not a string");
   if (token.trim().length === 0) throw new Error("token is empty or blank");

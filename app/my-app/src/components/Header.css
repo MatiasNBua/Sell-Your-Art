@@ -1,10 +1,9 @@
 .HeaderContainer{
   width: 100%;
-  background-color: rgb(9,30,121,1);
+  background-color: hsl(209, 51%, 48%);
   position: fixed;
   top: 0;
   z-index:5;
-  border-radius:  0 0 8px 8px;
 }
 
 .headerBanner{
@@ -12,17 +11,21 @@
 }
 
 .menuContainer {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   list-style: none;
+  color: var(--color);
+  background-color: var(--headerColor);
+  padding: 0px;
 }
 
 .HeaderMenuContainer {
+  background-color: var(--headerColor);
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  padding: 8px;
+  flex-direction: row;
+  justify-content: end;
+  padding: 12px 2vh 8px 0;
   gap: 25px;
 }

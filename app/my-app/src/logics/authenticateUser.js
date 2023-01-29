@@ -1,9 +1,7 @@
 import { validateEmail, validatePassword, validateCallbacks } from 'validators'
 import { AuthError, ClientError, ServerError, UnknownError } from 'errors'
 
-// const API_URL = process.env.REACT_APP_API_URL
-
-const API_URL = "http://localhost:8080/api"
+const API_URL = process.env.REACT_APP_API_URL
 
 /** 
  * Checks user credentials against database

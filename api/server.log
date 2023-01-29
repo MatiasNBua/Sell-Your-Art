@@ -158,3 +158,62 @@ ERROR 2023-01-26T16:52:22.931Z undefined/C:\Users\Matias N\workspace\proyectoFin
 INFO 2023-01-26T16:52:30.938Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
 api stopped
 INFO 2023-01-26T16:52:30.946Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-27T13:22:43.983Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-27T13:22:44.077Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-27T13:30:52.938Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | wrong password
+INFO 2023-01-27T13:56:19.041Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-27T13:56:21.481Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-27T13:56:21.584Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-27T14:02:37.590Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '123' is lower than the highest current bid
+ERROR 2023-01-27T15:11:17.150Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T15:11:17.153Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T15:11:18.480Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T15:11:18.482Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T17:02:56.084Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T17:02:56.090Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T17:02:57.346Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T17:02:57.349Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T17:03:00.201Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T17:03:00.203Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T17:03:01.658Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T17:03:01.659Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T17:03:03.514Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T17:03:03.516Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T18:03:57.266Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T18:03:57.268Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-27T18:03:58.423Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T18:03:58.425Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T18:20:44.994Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T18:20:51.190Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T18:20:52.876Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T18:20:54.617Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T18:20:55.527Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T18:21:47.146Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T18:21:48.799Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T18:21:49.503Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '125' is lower than the highest current bid
+ERROR 2023-01-27T19:13:13.402Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T19:13:13.403Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T19:16:33.789Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '126' is lower than the highest current bid
+ERROR 2023-01-27T19:16:36.088Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '126' is lower than the highest current bid
+ERROR 2023-01-27T20:26:13.728Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-27T20:26:13.730Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+INFO 2023-01-28T12:45:27.201Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-28T12:45:27.209Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-28T12:45:29.785Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-28T12:45:29.966Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-28T12:53:45.962Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\createAuctionHandler.js | title is empty or blank
+ERROR 2023-01-28T13:57:23.657Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-28T13:57:23.659Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-28T13:57:25.003Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-28T13:57:25.005Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-28T13:57:27.330Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-28T13:57:27.332Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-28T14:08:21.516Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-28T14:08:21.517Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-28T21:00:28.365Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-28T21:00:28.371Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+INFO 2023-01-29T14:44:26.924Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-29T14:44:26.952Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected

@@ -1,60 +1,102 @@
 .RenderAuctionsContainer {
   list-style: none;
-  background: rgb(191, 215, 234);
-  background: linear-gradient(
-    180deg,
-    rgba(191, 215, 234, 1) 0%,
-    rgba(158, 237, 195, 1) 16%,
-    rgba(241, 255, 181, 0.9447129193474265) 48%,
-    rgba(255, 246, 148, 0.981127485173757) 100%
-  );
+  background: var(--AccColor);
   display: flex;
   justify-content: center;
-  border: 2px solid rgb(0, 0, 0);
   border-radius: 8px;
   width: 100%;
-  padding: 10px;
 }
+
 .footer {
   height: 68px;
 }
-.AuctionList {
+
+/* .AuctionList {
   display: flex;
   overflow: scroll;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    347deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(5, 12, 70, 1) 10%,
-    rgba(5, 12, 71, 1) 16%,
-    rgba(9, 30, 121, 1) 48%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  padding: 0px;
-  gap: 26px;
+  background: var(--conainerAuction);
+} */
+
+.headerAucctionContainer {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .homePost {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
-  padding: 8px;
+  gap: 8px;
+}
+
+.tittleDescription {
+  height: 100%;
+  padding: 0 16px 0 16px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ul {
+  color: var(--color);
 }
 
 #bidButton {
   cursor: pointer;
 }
 
+.bidButton{
+  background-color: transparent;
+  color: var(--color);
+  border-style: none;
+  border: 1px solid var(--color);
+  border-radius: 16px;
+  height: 32px;
+  width: 100px;
+  transition: background-color .5s;
+}
+
+.bidButton:hover {
+  background-color: powderblue;
+  transition: background-color .5s;
+}
+
+.bidContainer {
+  display: flex;
+}
+
 .priceAndButton {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 5px;
+  flex-direction: column-reverse;
+  gap: 15px;
+  width: 100%;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputAndButton{
+  gap: 16px;
+  display: flex;
+}
+
+.inputBid{
+  height: 30px;
+  width: 50px;
 }
 
 .DateP {
@@ -62,14 +104,12 @@
 }
 
 .img {
-  height: 270px;
-  width: 250px;
+  height: 450px;
+  width: 414px;
   position: relative;
-  border-radius: 16px;
-  border: 2px solid rgb(12, 12, 63);
 }
 
-.endDate{
+.endDate {
   display: flex;
   align-self: center;
   /* justify-content: center; */

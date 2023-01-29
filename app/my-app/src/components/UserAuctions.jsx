@@ -36,22 +36,9 @@ function RetrieveUserAuctions({ /*auctions, context: { handleFeedback }*/ }) {
           <img className="img" src={auction.image} alt="50X50 PIXELES" />
           <p>{auction.description}</p>
 
-          {/* <form
-            className="priceAndButton"
-            onSubmit={handleBidSubmit}
-            data-auction-id={auction.id}
-          >
-            <label htmlFor=""></label>
-            <input
-              type="number"
-              name="newbid"
-              id="newBid"
-              defaultValue={
-                auction.currentValue + 1
-              } onChange={handleChangeInput}
-            />
+          <form>
             <p>€ {auction.currentValue}</p>
-          </form> */}
+          </form>
 
           <div className="endDate">
             <p className="DateP">{new Date( auction.finalDate).toISOString().substring(0,10)}</p>

@@ -1,6 +1,8 @@
 .transparent-button{
-    border-radius: 0 10px 0 10px;
-    border: 1px solid cornflowerblue;
+    background-color: transparent;
+    /* border: 1px solid cornflowerblue; */
+    color: var(--menuIcons);
+    border-style: none;
     gap: 10px;
     
 }

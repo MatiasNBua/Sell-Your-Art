@@ -5,10 +5,10 @@ import withContext from "../utils/withContext";
 import { useEffect, useState, } from "react";
 import retrieveAuctions from '../logics/retrieveAuctions';
 
-function AuctionList( { onNewBid, timestamp} ) {
+function AuctionList({ onNewBid, timestamp }) {
   const logger = new Loggito("List Auctions");
 
-  const [auctions, setAuctions] = useState(null); 
+  const [auctions, setAuctions] = useState(null);
 
   useEffect(() => {
     try {
@@ -22,7 +22,7 @@ function AuctionList( { onNewBid, timestamp} ) {
           return;
         }
         logger.debug("set auctions", auctions);
-        
+
         setAuctions(auctions);
       });
       // else
@@ -35,7 +35,7 @@ function AuctionList( { onNewBid, timestamp} ) {
       //     return
       //   }
 
-        // setAuctions(auctions)
+      // setAuctions(auctions)
 
       //   logger.debug('setauctions', auctions)
       // })
@@ -45,7 +45,7 @@ function AuctionList( { onNewBid, timestamp} ) {
       // refreshList()
 
     }
-  },[timestamp]);
+  }, [timestamp]);
 
   const handleBidSubmit = (event) => {
     event.preventDefault();
@@ -88,36 +88,35 @@ function AuctionList( { onNewBid, timestamp} ) {
       {auctions && auctions.map((auction) => (
         <li className="RenderAuctionsContainer" key={auction.id}>
           <div className="homePost">
-            <h3 className="titleAuction">{auction.title}</h3>
             <img className="img" src={auction.image} alt="50X50 PIXELES" />
-            <p>{auction.description}</p>
-
-            <form
-              className="priceAndButton"
-              onSubmit={handleBidSubmit}
-              data-auction-id={auction.id}
-            >
-              <label htmlFor=""></label>
-              <input
-                type="number"
-                name="newbid"
-                id="newBid"
-                defaultValue={
-                  auction.currentValue + 1
-                } /*onChange={handleChangeInput}*/
-              />
-              <button id="bidButton" type="submit" /*disabled={!buttonActive}*/>
-                Bid
-              </button>
-              <p>€ {auction.currentValue}</p>
-            </form> 
-
+            <div className="tittleDescription">
+              <div>
+                <h3 className="titleAuction">{auction.title}</h3>
+                <p>{auction.description}</p>
+              </div>
+              <div>
+                <p>€ {auction.currentValue}</p>
+              </div>
+            </div>
+            <form className="priceAndButton" onSubmit={handleBidSubmit} data-auction-id={auction.id}>
+              <div className="priceContainer">
+                <div className="textOffert">
+                  <p> ¡Write here your Offert!</p>
+                </div>
+                <div className="inputAndButton">
+                  <input className="inputBid" type="number" name="newbid" id="newBid" defaultValue={auction.currentValue + 1}/*onChange={handleChangeInput}*/ />
+                  <button className="bidButton" id="bidButton" type="submit" /*disabled={!buttonActive}*/>
+                    Bid
+                  </button>
+                </div>
+              </div>
+            </form>
             <div className="endDate">
-                end of auction:
+              <p>End of auction:</p>
               <p className="DateP">
                 {new Date(auction.finalDate).toISOString().substring(0, 10)}
               </p>
-              
+
               {/* <p>remaining time: {auction.remainingTime}</p> */}
             </div>
           </div>

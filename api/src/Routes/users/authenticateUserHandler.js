@@ -7,7 +7,6 @@ const { JWT_SECRET, JWT_EXP } = process.env
 
 
 module.exports = (req, res) => {
-    debugger
     runWithErrorHandling(() => {
         const { body: { email, password } } = req
 
