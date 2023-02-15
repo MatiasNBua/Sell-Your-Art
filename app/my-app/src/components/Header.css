@@ -24,8 +24,8 @@
 .HeaderMenuContainer {
   background-color: var(--headerColor);
   display: flex;
-  flex-direction: row;
-  justify-content: end;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   padding: 12px 2vh 8px 0;
   gap: 25px;
 }

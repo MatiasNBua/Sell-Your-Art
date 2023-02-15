@@ -5,13 +5,18 @@ import App from './App';
 import 'material-symbols';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom'
+import { GoogleOAuthProvider } from '@react-oauth/google'
+
+const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-    <App />
+      <GoogleOAuthProvider clientId={clientId}>
+        <App />
+      </GoogleOAuthProvider>
     </Router>
   </React.StrictMode>
 );

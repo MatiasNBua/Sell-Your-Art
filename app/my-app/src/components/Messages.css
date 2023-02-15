@@ -1,0 +1,8 @@
+.SendEmailContainer{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(42, 109, 168);
+}

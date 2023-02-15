@@ -84,33 +84,36 @@ function AuctionList({ onNewBid, timestamp }) {
   };
 
   return (
+    <div className="test">
     <ul className="AuctionList">
       {auctions && auctions.map((auction) => (
         <li className="RenderAuctionsContainer" key={auction.id}>
           <div className="homePost">
+            <div className="OnlyImage">
             <img className="img" src={auction.image} alt="50X50 PIXELES" />
-            <div className="tittleDescription">
-              <div>
+            </div>
+            <div className="tittleAndDescriptionContainer">
+              <div className="tittleAndDescription">
                 <h3 className="titleAuction">{auction.title}</h3>
-                <p>{auction.description}</p>
-              </div>
-              <div>
-                <p>€ {auction.currentValue}</p>
+                <p className="auctionDescription">{auction.description}</p>
               </div>
             </div>
+            <div className="priceAndButton">
             <form className="priceAndButton" onSubmit={handleBidSubmit} data-auction-id={auction.id}>
               <div className="priceContainer">
+              <p className=""> The start of the offert begins in</p>
                 <div className="textOffert">
-                  <p> ¡Write here your Offert!</p>
+                  <input className="inputBid" type="number" name="newbid" id="newBid" defaultValue={auction.currentValue + 1}/*onChange={handleChangeInput}*/ />
+                  <p className="currentValue">€ {auction.currentValue}</p>
                 </div>
                 <div className="inputAndButton">
-                  <input className="inputBid" type="number" name="newbid" id="newBid" defaultValue={auction.currentValue + 1}/*onChange={handleChangeInput}*/ />
                   <button className="bidButton" id="bidButton" type="submit" /*disabled={!buttonActive}*/>
                     Bid
                   </button>
                 </div>
               </div>
             </form>
+            </div>
             <div className="endDate">
               <p>End of auction:</p>
               <p className="DateP">
@@ -123,6 +126,7 @@ function AuctionList({ onNewBid, timestamp }) {
         </li>
       ))}
     </ul>
+    </div>
   );
 }
 

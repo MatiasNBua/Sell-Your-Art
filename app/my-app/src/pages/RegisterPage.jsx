@@ -2,24 +2,12 @@ import Loggito from '../utils/Loggito'
 import registerUser from '../logics/registerUser'
 import withContext from '../utils/withContext'
 import './RegisterPage.css'
+import { useEffect } from 'react'
 
 function RegisterPage({ onLinkClick, onRegisterFormSubmit, context: { handleFeedback } }) {
     const logger = new Loggito(RegisterPage.name)
 
     logger.info('constructor')
-
-    // let today = new Date();
-    // let dd = today.getDate();
-    // let mm = today.getMonth() + 1; //January is 0!
-    // let yyyy = today.getFullYear() + 18;
-    // if (dd < 10) {
-    //     dd = '0' + dd
-    // }
-    // if (mm < 10) {
-    //     mm = '0' + mm
-    // }
-
-    // today = yyyy + '-' + mm + '-' + dd;
 
     const handleLinkClick = event => {
         event.preventDefault()

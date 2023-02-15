@@ -17,7 +17,7 @@ function registerUser(name,lastname, email, password, birth, phonenumber, callba
 
     if (typeof callback !== 'function') throw new TypeError('callback is not a function')
 
-    const xhr = new XMLHttpRequest
+    const xhr = new XMLHttpRequest();
 
     debugger
     xhr.onload = function() {

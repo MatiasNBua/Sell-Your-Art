@@ -5,17 +5,18 @@
   --color: rgb(255, 255, 255);
   --input: rgb(148, 148, 148);
   --button: #e67568;
-  --AccColor: rgb(128, 131, 131);
+  --AccColor: rgb(128, 131, 131,0.12);
   --borderAccount: rgb(122, 199, 189);
   --headerColor: black;
   --menuIcons: white;
   --conainerAuction: black;
   --iconsFooter: white;
+  --auctionDescription: rgb(255, 255, 255,0.65); 
 
 
 
   --oposite: rgb(255, 255, 255);
-  --color-imput: rgb(73, 195, 179);
+  --color-imput: rgb(255, 255, 255);
 }
 
 :root.light {
@@ -29,6 +30,7 @@
   --menuIcons: black;
   --conainerAuction: rgb(255, 255, 255);
   --iconsFooter: black;
+  --auctionDescription: black;
 
   --oposite: rgb(0, 0, 0);
   --back-color: rgb(255, 255, 255);

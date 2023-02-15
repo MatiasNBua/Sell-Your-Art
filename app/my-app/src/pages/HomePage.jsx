@@ -8,7 +8,7 @@ import Loggito from '../utils/Loggito'
 import Profile from '../components/Profile'
 import UserAuctions from '../components/UserAuctions'
 import NewAuction from '../components/NewAuction'
-import Mail from '../components/Mail'
+import Messages from '../components/Messages'
 import Setting from '../components/Setting'
 import AuctionList from '../components/AuctionList'
 
@@ -74,10 +74,10 @@ function HomePage({ onLogoutClick, context: { handleFeedback } }) {
     logger.info('return')
   }
 
-  const handleMailClick = () => {
-    navigate('mail')
+  const handleMessagesClick = () => {
+    navigate('Messages')
 
-    logger.debug('navigate to mails')
+    logger.debug('navigate to Messages')
 
     logger.info('return')
   }
@@ -97,15 +97,14 @@ function HomePage({ onLogoutClick, context: { handleFeedback } }) {
     <Routes>
       {<Route path="/" element={<AuctionList timestamp={timestamp} onNewBid={refreshList} />} />}
       <Route path="profile" element={<Profile />} />
-      {/* <Route path="home" element={<Home />} /> */}
       <Route path="UserAuctions" element={<UserAuctions />} />
-      <Route path="newauction" element={<NewAuction onNewAuction={refreshList}/>} />
-      <Route path="mail" element={<Mail />} />
-      <Route path="setting" element={<Setting />} />
+      <Route path="Newauction" element={<NewAuction onNewAuction={refreshList}/>} />
+      <Route path="Messages" element={<Messages />} />
+      <Route path="Setting" element={<Setting />} />
     </Routes>
 
     <div className="footer">
-      <Footer onProfileClick={handleProfileClick} onHomeClick={handleHomeClick} onUserAuctionsClick={handleUserAuctionsClick} onNewAuctionClick={handleNewAuctionClick} onMailClick={handleMailClick} />
+      <Footer onProfileClick={handleProfileClick} onHomeClick={handleHomeClick} onUserAuctionsClick={handleUserAuctionsClick} onNewAuctionClick={handleNewAuctionClick} onMessagesClick={handleMessagesClick} />
     </div>
 
   </div>

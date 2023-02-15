@@ -11,9 +11,6 @@ function createBid(token, auctionId, price/*, date*/, callback) {
   xhr.onload = function () {
     const status = xhr.status;  
 
-    // const json = xhr.responseText
-    const { error, token } = JSON.parse(json)
-
     if (status >= 500) callback(new Error(`server error (${status})`));
     else if (status >= 400) callback(new Error(`client error (${status})`));
     else if (status === 201) callback(null);
@@ -25,7 +22,7 @@ function createBid(token, auctionId, price/*, date*/, callback) {
   xhr.setRequestHeader("Authorization", `Bearer ${token}`);
   xhr.setRequestHeader("Content-type", "application/json");
 
-  const bid = { price/*, date*/ };
+  const bid = { price };
   const json = JSON.stringify(bid)
 
   xhr.send(json);

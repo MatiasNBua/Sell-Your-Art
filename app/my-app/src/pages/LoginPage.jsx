@@ -2,16 +2,46 @@ import Loggito from '../utils/Loggito'
 import authenticateUser from '../logics/authenticateUser'
 import withContext from '../utils/withContext'
 import './LoginPage.css'
+import { GoogleLogin } from '@react-oauth/google';
+// import { useGoogleLogin } from '@react-oauth/google';
+// import { useState } from 'react';
+
 
 
 function LoginPage({ onLinkClick, onLogIn, context: { handleFeedback } }) {
     const logger = new Loggito(LoginPage.name)
-    // const context = useContext(Context)
-    // const handleFeedback = context.handleFeedback
 
+    // const [disabled , setDisabled] = useState(false)
+
+    // const handeGoogleLogin = () => {
+    //     setDisabled(true)
+    //     try{
+    //         window.google.accounts.id.initialize({
+    //             client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+    //             callback: handleResponse
+    //         })
+    //         window.google.accounts.id.promt((notification) => {
+    //             if(notification.isNotDisplayed){
+    //                 throw new Error("Try to clear the cookies or try again later")
+    //             }
+    //             if(notification.isSkippedMoment() || notification.isDismissedMoment()){
+    //                 setDisabled(false)
+    //             }
+    //         })
+    //     }catch{
+
+    //     }
+    // }
+    
     logger.info('constructor')
-
     logger.info('return')
+
+    // const login = useGoogleLogin({
+    //     onSuccess: codeResponse => console.log(codeResponse)
+    //   });
+
+
+
 
     const handleLinkClick = event => {
         event.preventDefault()
@@ -69,7 +99,23 @@ function LoginPage({ onLinkClick, onLogIn, context: { handleFeedback } }) {
                 <button className="button" type="submit">Login</button>
                 <a className="anchor" href="register" onClick={handleLinkClick}>Register</a>
             </div>
+            <GoogleLogin
+        className="LoginGoogle"
+          onSuccess={credentialResponse => {
+            console.log(credentialResponse.credential);
+          }}
+          onError={() => {
+            console.log('Login Failed');
+          }}
+          useOneTap
+          />
         </form>
+
+        {/* <button  onClick={handeGoogleLogin}>
+          Log In Using Google
+        </button> */}
+
+        
 
     </main>
     </div>

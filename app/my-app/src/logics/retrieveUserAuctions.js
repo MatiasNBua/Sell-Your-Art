@@ -6,7 +6,7 @@ function retrieveUserAuctions(token, callback,authorId) {
 
     if (typeof callback !== 'function') throw new TypeError('callback is not a function')
     
-    const xhr = new XMLHttpRequest
+    const xhr = new XMLHttpRequest();
 
     // response
 

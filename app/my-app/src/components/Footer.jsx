@@ -2,13 +2,13 @@ import './Footer.css'
 import { useState } from 'react'
 import Loggito from '../utils/Loggito';
 
-function Footer({ onProfileClick, onHomeClick, onUserAuctionsClick, onNewAuctionClick, onMailClick }) {
+function Footer({ onProfileClick, onHomeClick, onUserAuctionsClick, onNewAuctionClick, onMessagesClick }) {
 
   const handleProfileClick = () => onProfileClick()
   const handleHomeClick = () => onHomeClick()
   const handleUserAuctionsClick = () => onUserAuctionsClick()
   const handleNewAuctionClick = () => onNewAuctionClick()
-  const handleMailClick = () => onMailClick() 
+  const handleMessagesClick = () => onMessagesClick() 
 
   const uls = document.querySelectorAll("nav ul");
   const links = [...document.querySelectorAll("nav a")];
@@ -73,7 +73,7 @@ function Footer({ onProfileClick, onHomeClick, onUserAuctionsClick, onNewAuction
       </ul>
       <ul>
         <li>
-          <a href="#" className="active" onClick={handleMailClick} >
+          <a href="#" className="active" onClick={handleMessagesClick} >
             <span className="material-symbols-outlined">
               inbox
             </span>

@@ -8,6 +8,8 @@ import Context from './utils/Context'
 import './App.css'
 import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
 
+
+
 function App() {
     const logger = new Loggito('App')
 

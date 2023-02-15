@@ -28,6 +28,7 @@ function Menu({ view, onLogoutClick, onSettingClick, context: { toggleTheme } })
                 <IconButton text="logout" onClick={handleLogoutClick} /> Logout
             </li>
         </ul>
+     
     </div>
 }
 
