@@ -1,9 +1,10 @@
 .HeaderContainer{
   width: 100%;
-  background-color: hsl(209, 51%, 48%);
+  background-color: var(--headerColor);
   position: fixed;
   top: 0;
   z-index:5;
+  border: 1px solid wheat;
 }
 
 .headerBanner{
@@ -24,8 +25,13 @@
 .HeaderMenuContainer {
   background-color: var(--headerColor);
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 12px 2vh 8px 0;
+  padding: 10px;
   gap: 25px;
+}
+
+.textInHeader{
+  color: var(--color);
 }

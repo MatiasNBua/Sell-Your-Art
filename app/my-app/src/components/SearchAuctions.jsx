@@ -15,7 +15,7 @@ function SearchAuctions({ onQuery }) {
     logger.info('return')
 
     return <form className="container container--row" onSubmit={handleSubmit}>
-        <input className="input" type="text" name="query"/>
+        <input className="inputSearch" type="text" name="query"/>
         <IconButton text="search" />
     </form>
 }

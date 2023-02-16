@@ -11,6 +11,7 @@ import NewAuction from '../components/NewAuction'
 import Messages from '../components/Messages'
 import Setting from '../components/Setting'
 import AuctionList from '../components/AuctionList'
+import Filter from '../components/Filter'
 
 function HomePage({ onLogoutClick, context: { handleFeedback } }) {
 
@@ -90,19 +91,21 @@ function HomePage({ onLogoutClick, context: { handleFeedback } }) {
   const refreshList = () => setTimestamp(Date.now())
 
   return <div className="Home">
-    <div className="headerBanner">
+    <header className="headerBanner">
       <Header onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick} />
-    </div>
+    </header>
 
+    <body>
+      <Filter/>
     <Routes>
-      {<Route path="/" element={<AuctionList timestamp={timestamp} onNewBid={refreshList} />} />}
+      <Route path="/" element={<AuctionList timestamp={timestamp} onNewBid={refreshList} />} />
       <Route path="profile" element={<Profile />} />
       <Route path="UserAuctions" element={<UserAuctions />} />
       <Route path="Newauction" element={<NewAuction onNewAuction={refreshList}/>} />
       <Route path="Messages" element={<Messages />} />
       <Route path="Setting" element={<Setting />} />
     </Routes>
-
+    </body>
     <div className="footer">
       <Footer onProfileClick={handleProfileClick} onHomeClick={handleHomeClick} onUserAuctionsClick={handleUserAuctionsClick} onNewAuctionClick={handleNewAuctionClick} onMessagesClick={handleMessagesClick} />
     </div>

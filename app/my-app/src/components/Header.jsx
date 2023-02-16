@@ -3,8 +3,6 @@ import './Header.css'
 import IconButton from './IconButton'
 import Loggito from '../utils/Loggito'
 import MenuHeader from './MenuHeader'
-import SearchAuctions from '../components/SearchAuctions'
-import  Filter  from './Filter'
 
 // import Setting from './Setting'
 
@@ -42,13 +40,12 @@ function Header ({ onLogoutClick, onSettingClick, view: viewHome, onSearch}) {
     
 
     return <header className="HeaderContainer">
+        
         <div className="HeaderMenuContainer">
             {   view === null && <IconButton text="menu" onClick={handleMenuClick} />}
-            {/* {   view !== 'menu' && <SearchAuctions onQuery={onSearch}/>} */}
             {   view === 'menu' && <IconButton text="close" onClick={handleCloseClick} />}
-            {   view === null && < Filter />}
         </div>
-            { view === 'menu' && <MenuHeader onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick} view={viewHome} />}
+            {   view === 'menu' && <MenuHeader onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick} view={viewHome} />}
 
     </header>
     }

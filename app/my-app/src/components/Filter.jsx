@@ -1,9 +1,16 @@
 import withContext from "../utils/withContext"
 import './Filter.css'
+import SearchAuctions from "./SearchAuctions"
 
 function filter (){
-    return(
-        <section className="filterContainer">
+    return(<div className="filterContainer">
+        <div className="titleContainer">
+            <h1 className="h1">Find the art that you like</h1>
+            <div>
+            </div>
+        </div>
+
+        <section className="sectionContainer">
         <div className="filterRanges">
             <label htmlFor="price">Price</label>
             <input type="range"
@@ -12,6 +19,7 @@ function filter (){
              max="100.000"
              />
         </div>
+        <SearchAuctions/>
         <div className="filterCategorys">
             <label htmlFor="category">Categories</label>
             <select id="category">
@@ -21,6 +29,7 @@ function filter (){
             </select>
         </div>
         </section>
+        </div>
     )
 }
 
