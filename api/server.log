@@ -222,3 +222,235 @@ INFO 2023-01-29T17:31:29.743Z undefined/C:\Users\Matias N\workspace\proyectoFina
 INFO 2023-01-30T11:52:39.881Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
 api stopped
 INFO 2023-01-30T11:52:39.923Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T18:03:27.524Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T18:03:27.752Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-30T18:19:43.158Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+ERROR 2023-01-30T18:19:52.237Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | wrong password
+INFO 2023-01-30T18:27:05.568Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T18:27:05.575Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T18:27:07.688Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T18:27:07.853Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-01-30T18:58:13.343Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T18:58:13.348Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T19:03:47.364Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T19:03:47.550Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-01-30T19:26:39.169Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T19:26:39.175Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T19:26:47.246Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T19:27:14.536Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T19:27:14.640Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-01-30T19:28:24.480Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T19:28:24.485Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T19:28:26.381Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T19:28:26.480Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-30T19:28:28.100Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | jwt expired
+ERROR 2023-01-30T19:28:41.916Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | createMessage is not defined
+INFO 2023-01-30T19:29:18.015Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T19:29:18.019Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T19:29:22.281Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T19:29:22.386Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-30T19:29:23.970Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | createMessage is not a function
+ERROR 2023-01-30T19:30:13.265Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | createMessage is not a function
+ERROR 2023-01-30T19:31:30.894Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | createMessage is not a function
+INFO 2023-01-30T21:27:18.077Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T21:27:18.091Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T21:27:37.071Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T21:27:37.411Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-30T21:27:41.379Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | jwt expired
+ERROR 2023-01-30T21:28:05.293Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | createMessage is not a function
+ERROR 2023-01-30T21:28:46.398Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | createMessage is not a function
+INFO 2023-01-30T21:28:54.480Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T21:28:54.486Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T21:29:24.605Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T21:29:24.764Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-30T21:30:45.056Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | createMessage is not a function
+INFO 2023-01-30T21:36:32.362Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-30T21:36:32.373Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-30T21:36:35.918Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T21:36:45.232Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-30T21:36:45.344Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-30T21:59:04.840Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+INFO 2023-01-31T09:45:04.643Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T09:45:04.650Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T09:45:07.246Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T09:45:07.479Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T09:45:11.253Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | retrieveMessages is not a function
+ERROR 2023-01-31T09:45:34.576Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | retrieveMessages is not a function
+ERROR 2023-01-31T09:45:36.219Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | retrieveMessages is not a function
+ERROR 2023-01-31T09:46:13.612Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | retrieveMessages is not a function
+INFO 2023-01-31T09:46:19.570Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T09:46:19.581Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T09:46:28.786Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T09:46:28.896Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T09:46:31.011Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | verifyObjectIdString is not defined
+ERROR 2023-01-31T09:46:33.298Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | verifyObjectIdString is not defined
+INFO 2023-01-31T09:47:18.497Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T09:47:18.505Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T09:47:41.266Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T09:47:41.480Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T09:49:26.806Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | verifyObjectIdString is not defined
+INFO 2023-01-31T09:49:26.811Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T09:49:26.852Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T09:49:31.289Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T09:49:31.398Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-01-31T09:49:32.103Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T09:49:32.111Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T09:49:34.273Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T09:49:34.479Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T09:49:35.649Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | verifyObjectString is not a function
+INFO 2023-01-31T09:51:11.379Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T09:51:11.391Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T09:51:13.268Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+ERROR 2023-01-31T09:51:13.398Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | Cannot read properties of undefined (reading 'verifyObjectString')
+INFO 2023-01-31T09:52:43.477Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T09:52:43.585Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-01-31T09:53:03.500Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T09:53:03.507Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T09:53:07.339Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T09:53:07.462Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-01-31T10:46:02.214Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T10:46:02.219Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T10:46:03.815Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T10:46:03.927Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T12:06:34.360Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | auction id is not valid
+INFO 2023-01-31T12:23:11.729Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T12:23:11.736Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T12:23:13.606Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T12:23:13.752Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T12:23:20.134Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-31T12:23:20.136Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+INFO 2023-01-31T12:28:05.096Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T12:28:05.101Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T12:28:06.752Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T12:28:06.850Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T13:29:35.273Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\createMessageHandler.js | jwt expired
+INFO 2023-01-31T13:29:40.920Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T13:29:40.926Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T13:29:42.880Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T13:29:42.991Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T13:31:51.591Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-01-31T13:31:55.124Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+INFO 2023-01-31T13:37:39.346Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T13:37:39.353Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T13:37:41.104Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T13:37:41.200Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T14:38:23.011Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-31T14:38:23.012Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-31T14:38:24.038Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-31T14:38:24.041Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-01-31T14:38:39.793Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-01-31T14:38:39.797Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+INFO 2023-01-31T14:39:50.887Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T14:39:50.892Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T14:39:53.011Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T14:39:53.124Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T14:48:44.040Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+INFO 2023-01-31T17:48:34.028Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-01-31T17:48:34.050Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-01-31T17:48:35.932Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-01-31T17:48:36.074Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-01-31T18:55:32.819Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | jwt expired
+ERROR 2023-01-31T18:59:47.209Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+ERROR 2023-01-31T18:59:47.223Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveUserAuctionsHandler.js | jwt expired
+INFO 2023-02-01T13:31:41.612Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-01T13:31:41.628Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-01T13:39:02.556Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-01T13:39:02.684Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-02-01T14:13:16.690Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-01T14:13:16.696Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-01T14:24:13.209Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-01T14:24:13.308Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-02-01T14:28:22.654Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-01T14:28:22.664Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-01T14:28:24.419Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-01T14:28:24.515Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-02-01T15:20:09.420Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-01T15:20:09.426Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-01T15:20:11.207Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-01T15:20:11.342Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-02-01T16:22:23.720Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-01T16:22:23.736Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-01T17:07:31.075Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-01T17:07:31.233Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-02-01T18:37:55.608Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-02-01T18:37:55.613Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+ERROR 2023-02-01T18:37:55.610Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-02-01T18:37:55.615Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+INFO 2023-02-01T18:38:56.370Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-01T18:38:56.386Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-01T18:38:58.580Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-01T18:38:58.721Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-02-15T12:10:23.702Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | connect ECONNREFUSED 127.0.0.1:27017
+ERROR 2023-02-15T12:12:50.709Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | connect ECONNREFUSED 127.0.0.1:27017
+ERROR 2023-02-15T12:14:26.432Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | connect ECONNREFUSED 127.0.0.1:27017
+INFO 2023-02-15T12:17:12.760Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-15T12:17:12.945Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-02-15T12:17:23.381Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | user with email cindi@entes.com not found
+ERROR 2023-02-15T12:17:27.646Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | user with email cindi@entes.com not found
+ERROR 2023-02-15T12:17:30.959Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | user with email cindi@entes.com not found
+ERROR 2023-02-15T12:17:34.271Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | user with email cindi@entes.com not found
+ERROR 2023-02-15T12:17:40.186Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | user with email cindi@entes.com not found
+ERROR 2023-02-15T12:18:03.479Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-02-15T12:18:03.481Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+INFO 2023-02-15T13:56:41.595Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-15T13:56:41.612Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-15T13:56:46.178Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-15T13:56:46.288Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+INFO 2023-02-15T13:56:47.755Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-15T13:56:47.760Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-15T14:49:06.977Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-15T14:49:07.067Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-02-15T14:49:28.117Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | user with email cindi@entes.com not found
+ERROR 2023-02-15T14:49:31.588Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\authenticateUserHandler.js | user with email cindi@entes.com not found
+ERROR 2023-02-15T14:59:55.858Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '122' is lower than the highest current bid
+ERROR 2023-02-15T14:59:57.567Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\bids\createBidHandler.js | price of bid '122' is lower than the highest current bid
+ERROR 2023-02-15T15:00:08.755Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-02-15T15:00:08.756Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+INFO 2023-02-15T18:05:38.944Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-15T18:05:38.956Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected
+INFO 2023-02-15T18:05:40.767Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db connected
+INFO 2023-02-15T18:05:40.879Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | api v1.0.0 started and listening in port 8080
+ERROR 2023-02-15T18:27:45.928Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-02-15T18:27:45.935Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-02-15T18:27:45.938Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+ERROR 2023-02-15T18:27:45.940Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+ERROR 2023-02-15T19:28:40.402Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-02-15T19:28:40.403Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\users\retrieveUserHandler.js | jwt expired
+ERROR 2023-02-15T19:55:46.936Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-02-15T19:55:46.939Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\messages\retrieveMessageHandler.js | invalid token
+ERROR 2023-02-15T21:57:39.644Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+ERROR 2023-02-15T21:57:39.647Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\routes\auction\retrieveAuctionHandler.js | jwt expired
+INFO 2023-02-15T23:19:51.529Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | 
+api stopped
+INFO 2023-02-15T23:19:51.543Z undefined/C:\Users\Matias N\workspace\proyectoFinal\proyectoFinal\api\src\index.js | db disconnected

@@ -1,5 +1,5 @@
 const { User, Bid, Auction } = require("../../../models");
-const {NotFoundError, SystemError, ConflictError, FormatError,} = require("errors");
+const {NotFoundError, SystemError, ConflictError} = require("errors");
 const { validateString, validateText, validateDate } = require("validators");
 const { verifyObjectIdString } = require("../../../utils");
 

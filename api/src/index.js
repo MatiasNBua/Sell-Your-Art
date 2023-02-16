@@ -7,8 +7,9 @@ const cors = require('cors')
 const { name, version } = require('../package.json')
 const { env: { MONGO_URL, PORT } } = process
 
-
+    debugger
 connect(MONGO_URL)
+ 
     .then(() => {
         logger.info('db connected')
 
@@ -16,13 +17,13 @@ connect(MONGO_URL)
         
         const api = express()
         
-        const { usersRouter, auctionRouter} = require('./routes')     
+        const { usersRouter, auctionRouter, messagesRouter} = require('./routes')     
         
         api.use(cors())
 
         api.get('/', (req, res) => res.send('Postits API v1.0 ;)'))
 
-        api.use('/api', usersRouter,auctionRouter )
+        api.use('/api', usersRouter,auctionRouter,messagesRouter )
         
         
         api.listen(PORT, () => logger.info(`${name} v${version} started and listening in port ${PORT}`))
