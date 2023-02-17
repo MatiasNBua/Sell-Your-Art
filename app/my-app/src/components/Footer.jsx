@@ -1,6 +1,4 @@
 import './Footer.css'
-import { useState } from 'react'
-import Loggito from '../utils/Loggito';
 
 function Footer({ onProfileClick, onHomeClick, onUserAuctionsClick, onNewAuctionClick, onMessagesClick }) {
 

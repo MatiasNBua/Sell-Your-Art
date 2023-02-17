@@ -48,6 +48,7 @@ function Header ({ onLogoutClick, onSettingClick, view: viewHome, onSearch}) {
             {   view === 'menu' && <MenuHeader onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick} view={viewHome} />}
 
     </header>
+    
     }
 
     export default Header

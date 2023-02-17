@@ -1,8 +1,8 @@
 .titleContainer{
     display: flex;
+    justify-content: space-around;
     padding: 10px 0px;
     color: var(--color);
-    margin-left: 376px;
 }
 
 .sectionContainer{
@@ -25,3 +25,33 @@
     align-items: center;
     gap: 16px;
 }
+
+/* Filters and Search in desktop */
+@media (max-width: 1700px) {
+    .sectionContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    .titleContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+/* Filters and Search in Laptop */
+@media (max-width:1150px){
+    .sectionContainer{  
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 16px;
+    }
+
+
+}
+

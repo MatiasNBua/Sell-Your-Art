@@ -39,7 +39,7 @@
 }
 
 * {
-  font-family: Lato;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
 
@@ -59,9 +59,7 @@ input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--color);
-  border-radius: 8px;
   -webkit-text-fill-color: var(--input);
-  padding: 8px
 }
 
 .button {

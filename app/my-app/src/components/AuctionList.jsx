@@ -4,6 +4,7 @@ import createBid from "../logics/createBid";
 import withContext from "../utils/withContext";
 import { useEffect, useState, } from "react";
 import retrieveAuctions from '../logics/retrieveAuctions';
+import Filter from './Filter'
 
 function AuctionList({ onNewBid, timestamp }) {
   const logger = new Loggito("List Auctions");
@@ -85,6 +86,7 @@ function AuctionList({ onNewBid, timestamp }) {
 
   return (
     <div className="test">
+     <Filter/>
     <ul className="AuctionList">
       {auctions && auctions.map((auction) => (
         <li className="RenderAuctionsContainer" key={auction.id}>
@@ -104,7 +106,7 @@ function AuctionList({ onNewBid, timestamp }) {
               <p className=""> The start of the offert begins in</p>
                 <div className="textOffert">
                   <input className="inputBid" type="number" name="newbid" id="newBid" defaultValue={auction.currentValue + 1}/*onChange={handleChangeInput}*/ />
-                  <p className="currentValue">€ {auction.currentValue}</p>
+                  <p className="currentValue">{auction.currentValue} €</p>
                 </div>
                 <div className="inputAndButton">
                   <button className="bidButton" id="bidButton" type="submit" /*disabled={!buttonActive}*/>
