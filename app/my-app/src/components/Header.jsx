@@ -3,16 +3,17 @@ import './Header.css'
 import IconButton from './IconButton'
 import Loggito from '../utils/Loggito'
 import MenuHeader from './MenuHeader'
+import Filter from './Filter'
 
 // import Setting from './Setting'
 
 
-function Header ({ onLogoutClick, onSettingClick, view: viewHome, onSearch}) {
+function Header({ onLogoutClick, onSettingClick, view: viewHome, /*onSearch*/ }) {
 
     const logger = new Loggito('header')
 
-    const [view, setView] = useState (null)
-        //this.state = { view: null }  <--- esta es la forma sin hook, para trabajar con react native//
+    const [view, setView] = useState(null)
+    //this.state = { view: null }  <--- esta es la forma sin hook, para trabajar con react native//
 
 
     const handleMenuClick = () => {
@@ -21,23 +22,23 @@ function Header ({ onLogoutClick, onSettingClick, view: viewHome, onSearch}) {
         logger.debug('setView', 'menu')
     }
 
-    const handleCloseClick = () =>  {
-        setView (null)
+    const handleCloseClick = () => {
+        setView(null)
 
         logger.debug('setView', null)
     }
 
     const handleSettingClick = () => {
-       setView(null)
+        setView(null)
 
-       logger.debug('setView',null)
+        logger.debug('setView', null)
 
-       onSettingClick()
+        onSettingClick()
     }
 
     logger.info('render')
 
-    
+
 
     return <header className="HeaderContainer">
         
@@ -46,9 +47,13 @@ function Header ({ onLogoutClick, onSettingClick, view: viewHome, onSearch}) {
             {   view === 'menu' && <IconButton text="close" onClick={handleCloseClick} />}
         </div>
             {   view === 'menu' && <MenuHeader onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick} view={viewHome} />}
-
-    </header>
     
-    }
+            
+            {   view === null && <Filter/>}
+           {/*onChange={changeFilters}*/}
+    
+    </header>
 
-    export default Header
+}
+
+export default Header

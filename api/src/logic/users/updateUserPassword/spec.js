@@ -13,13 +13,16 @@ describe('updateUserPassword', () => {
     it('Succeeds updating user password', () => {
         
         const name = 'SpecTesting'
+        const lastname = 'test'
         const email = 'spec@testing.com'
         const password = '123123123Aa!'
+        const birth = '12/09/1990'
+
 
         const newPassword = 'Aa!123123123'
         const confirmNewPassword = 'Aa!123123123'
         return (async () => {
-            const user = await User.create({ name, email, password })
+            const user = await User.create({ name,lastname, email, password, birth })
 
             const result = await updateUserPassword(user.id, password, newPassword, confirmNewPassword)
 

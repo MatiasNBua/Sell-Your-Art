@@ -1,20 +1,26 @@
+require('dotenv').config()
+
 const {connect, disconnect, Types: { ObjectId }} = require("mongoose");
 const { User, Auction } = require("../../../models");
 const { NotFoundError } = require("errors");
 const createAuction = require(".");
+const { env : {MONGO_URL_TEST}} = process
+
 
 describe("createAuction", () => {
-  beforeAll(() => connect("mongodb://localhost:27017/postits-test"));
+  beforeAll(() => connect(MONGO_URL_TEST));
 
   beforeEach(() => Promise.all([User.deleteMany(), Auction.deleteMany()]));
 
   it("succeeds on correct Auction push", () => {  // happy path
   
-    const name = "artattack";
+    const name = "art";
+    const lastname = "attack"
     const email = "art@attack.com";
     const password = "123123123";
+    const birth = "1990/11/04"
 
-    return User.create( { name, email, password } )
+    return User.create( { name, lastname, email, password, birth } )
     .then((user) => {
       const auction = {
         author: user._id.toString(),
@@ -22,7 +28,7 @@ describe("createAuction", () => {
         description: "Mesa de resina epoxica, con acabado de marmol",
         value: 450,
         image: "https://mesasepoxi.com/wp-content/uploads/2021/10/mesaepoxi.com-mesas-de-resina-epoxy-madera-nogal-olivo.jpg",
-        initialDate: new Date("05/10/2022"),
+        // initialDate: new Date("05/10/2022"),
         finalDate: new Date("07/10/2020")
       };
 

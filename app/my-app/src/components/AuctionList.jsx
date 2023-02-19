@@ -8,7 +8,6 @@ import Filter from './Filter'
 
 function AuctionList({ onNewBid, timestamp }) {
   const logger = new Loggito("List Auctions");
-
   const [auctions, setAuctions] = useState(null);
 
   useEffect(() => {
@@ -86,7 +85,6 @@ function AuctionList({ onNewBid, timestamp }) {
 
   return (
     <div className="test">
-     <Filter/>
     <ul className="AuctionList">
       {auctions && auctions.map((auction) => (
         <li className="RenderAuctionsContainer" key={auction.id}>

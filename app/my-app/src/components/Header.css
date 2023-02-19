@@ -4,11 +4,23 @@
   position: fixed;
   top: 0;
   z-index:5;
-  border: 1px solid wheat;
+  height: 220px;
+}
+
+@media (max-width:1150px) {
+  .HeaderContainer{
+    height: 265px;
+  }
+}
+
+@media (max-width:465px) {
+  .HeaderContainer{
+    height: 320px;
+  }
 }
 
 .headerBanner{
-  height: 55px;
+  height: 100px;
 }
 
 .menuContainer {

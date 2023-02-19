@@ -46,7 +46,7 @@ const auction = new Schema({
     initialDate: {
         type: Date,
         default: Date.now,
-        // required: true
+
     },
 
 
@@ -59,3 +59,4 @@ module.exports = auction
 //    type: String,
 //    enum: ['euro', 'american dollar', 'pound']
 // }
+

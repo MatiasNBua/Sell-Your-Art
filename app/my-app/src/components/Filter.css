@@ -26,6 +26,9 @@
     gap: 16px;
 }
 
+.minPrince{
+    color: var(--color);
+}
 /* Filters and Search in desktop */
 @media (max-width: 1700px) {
     .sectionContainer{

@@ -17,7 +17,7 @@ const { verifyObjectIdString } = require('../../../utils')
  * @throws {NotFoundError} If the user is not found.
  * @throws {SystemError} If an error happens in db.
  */
- function createAuction(author, title, description, value, image, finalDate /*initialDate*/) {
+ function createAuction(author, title, description, value, image, finalDate) {
     verifyObjectIdString(author, 'author')
     validateText(title, 'title')
     if( description) validateString(description)

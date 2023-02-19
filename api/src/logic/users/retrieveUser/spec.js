@@ -18,7 +18,7 @@ describe('retrieveUser', () => {
         const email = 'pepito@grillo.com'
         const password = '123123123'
         const birth = '12-01-2020'
-        const phoneNumber = '+34 5252 8080'
+        const phoneNumber = '3452528080'
 
         return User.create({ name,lastname, email, password, birth, phoneNumber })
             .then(user =>

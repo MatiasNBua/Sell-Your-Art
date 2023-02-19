@@ -11,13 +11,15 @@ import NewAuction from '../components/NewAuction'
 import Messages from '../components/Messages'
 import Setting from '../components/Setting'
 import AuctionList from '../components/AuctionList'
+import Filter from '../components/Filter'
 
-function HomePage({ onLogoutClick, context: { handleFeedback } }) {
+function HomePage({ onLogoutClick, context: { handleFeedback }, }) {
 
   const logger = new Loggito('HomePage')
 
   const navigate = useNavigate()
   const [timestamp, setTimestamp] = useState()
+
 
   useEffect(() => {
     logger.info('"componentDidMount"')
@@ -43,6 +45,7 @@ function HomePage({ onLogoutClick, context: { handleFeedback } }) {
     }
   }, [])
 
+  
   const handleProfileClick = () => {
     navigate('profile')
 
@@ -92,7 +95,9 @@ function HomePage({ onLogoutClick, context: { handleFeedback } }) {
   return <div className="Home">
 
     <header className="headerBanner">
-      <Header onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick} />
+      <Header onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick}>
+        <Filter  />
+      </Header>
     </header>
 
     <body>
