@@ -1,54 +1,66 @@
 import { useEffect, useState } from "react";
-import retrieveUserAuctions  from "../logics/retrieveUserAuctions"
+import retrieveUserAuctions from "../logics/retrieveUserAuctions"
 import Loggito from "../utils/Loggito";
 import "./UserAuctions.css"
 import withContext from "../utils/withContext";
 
 function RetrieveUserAuctions({ /*auctions, context: { handleFeedback }*/ }) {
 
-  const [ auctions, setAuctions ] = useState(null)  
+  const [auctions, setAuctions] = useState(null)
   const logger = new Loggito('My auctions list')
 
-    useEffect(() => {
-      retrieveUserAuctions(sessionStorage.token, (error, auction) => {
-        if(error) {
+  useEffect(() => {
+    retrieveUserAuctions(sessionStorage.token, (error, auction) => {
+      if (error) {
 
-          
 
-          // handleFeedBack({ message: error.message, level: 'warning'})
 
-          return
-        }
+        // handleFeedBack({ message: error.message, level: 'warning'})
 
-          // handleFeedBack({ message: '!Retrieve Your Auctions¡', level:'success'})
+        return
+      }
 
-        setAuctions(auction)
-      })
-    }, [])
+      // handleFeedBack({ message: '!Retrieve Your Auctions¡', level:'success'})
 
-    
-    return (
-    <ul className="AuctionList">
-    {auctions && auctions.map((auction) => (
-      <li className="renderMyAuctions" key={auction.id}>
-        <div className="homePost">
-          <h3 className="titleAuction">{auction.title}</h3>
-          <img className="img" src={auction.image} alt="50X50 PIXELES" />
-          <p>{auction.description}</p>
+      setAuctions(auction)
+    })
+  }, [])
 
-          <form>
-            <p>€ {auction.currentValue}</p>
-          </form>
 
-          <div className="endDate">
-            <p className="DateP">{new Date( auction.finalDate).toISOString().substring(0,10)}</p>
-            end of auction:
-          </div>
-        </div>
-      </li>
-    ))}
-  </ul>
-    )
+  return (
+    <div className="personal-auction-list-container">
+      <div className="title-personal-auctionList">
+        <h2 className="personal-of-auctionList">These are your auctions</h2>
+      </div>
+      <ul className="personal-auction-list-ul">
+        {auctions && auctions.map((auction) => (
+          <li className="personal-AuctionList" key={auction.id}>
+            <div className="homePost">
+              <div className="OnlyImage">
+                <img className="img" src={auction.image} alt="50X50 PIXELES" />
+              </div>
+
+              <div className="tittleAndDescriptionContainer">
+                <div className="tittleAndDescription">
+                  <h3 className="titleAuction">{auction.title}</h3>
+                  <p >{auction.description}</p>
+                </div>
+              </div>
+
+              <form >
+                <p className="currentValue"> last Price: €{auction.currentValue}</p>
+              </form>
+
+              <div className="endDate">
+                <p className="DateP">{new Date(auction.finalDate).toISOString().substring(0, 10)}</p>
+                end of auction:
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 export default withContext(RetrieveUserAuctions)

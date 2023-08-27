@@ -1,20 +1,124 @@
-.AuctionList {
-    display: flex;
-    overflow: scroll;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--containerAuction);
-    padding: 0px;
-    gap: 26px;
-  }
 
-.renderMyAuctions {
-  list-style: none;
-  background: var(--AccColor);
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
+
+@media only screen and (min-width: 600px) and (max-width:900px) {}
+.personal-auction-list-container {
+  margin: 68px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.personal-title-of-auctionList {
+  flex-wrap: wrap;
+  padding: 16px;
+  margin: 12px;
+  display: flex;
+}
+
+.personal-title-auctionList {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-of-auctionList {
+  padding: 16px;
+  margin: 12px;
+}
+
+.title-personal-AuctionList {
+  flex-wrap: wrap;
+  padding: 16px;
+  margin: 12px;
+  display: flex;
+}
+
+.personal-auction-list-ul {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+
+.personal-auction-list-ul li {
+  background-color: var(--bg-acutionList);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.personal-auction-list-ul li img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.currentValue {
+  padding: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .personal-auction-list-container {
+    margin: 68px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal-title-of-auctionList {
+    flex-wrap: wrap;
+    padding: 16px;
+    margin: 12px;
+    display: flex;
+  }
+
+  .personal-title-auctionList {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personal-of-auctionList {
+    padding: 16px;
+    margin: 12px;
+  }
+
+  .title-personal-AuctionList {
+    flex-wrap: wrap;
+    padding: 16px;
+    margin: 12px;
+    display: flex;
+  }
+
+  .personal-auction-list-ul {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0 68px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
+
+  .personal-auction-list-ul li {
+    background-color: var(--bg-acutionList);
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .personal-auction-list-ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .currentValue {
+    padding: 12px;
+  }
+
+
+}

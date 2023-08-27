@@ -1,21 +1,24 @@
 import Loggito from "../utils/Loggito";
-import "./AuctionList.css";
 import createBid from "../logics/createBid";
 import withContext from "../utils/withContext";
-import { useEffect, useState, } from "react";
 import retrieveAuctions from '../logics/retrieveAuctions';
-import Filter from './Filter'
+import SearchAunctions from "./SearchAuctions";
 
-function AuctionList({ onNewBid, timestamp }) {
+import { useEffect, useState, } from "react";
+import "./AuctionList.css";
+
+function AuctionList({ refreshList, onNewBid, timestamp, context:{ handleFeedback } }) {
   const logger = new Loggito("List Auctions");
   const [auctions, setAuctions] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const categories = ['glass', 'ceramics', 'jewelry', 'sculptures', 'drawing', 'paints']; // Define tus categorías aquí
+
 
   useEffect(() => {
     try {
-      // if (!query)
       retrieveAuctions(sessionStorage.token, (error, auctions) => {
         if (error) {
-          // handleFeedback({ message: error.message, level: "error" });
+          handleFeedback({ message: error.message, level: "error" });
 
           logger.warn(error.message);
 
@@ -24,28 +27,23 @@ function AuctionList({ onNewBid, timestamp }) {
         logger.debug("set auctions", auctions);
 
         setAuctions(auctions);
-      });
-      // else
-      // SearchAuctions(sessionStorage.token, /*query,*/ (error, auctions) => {
-      //   if (error) {
-      //     handleFeedback({ message: error.message, level: 'error' })
-
-      //     logger.warn(error.message)
-
-      //     return
-      //   }
-
-      // setAuctions(auctions)
-
-      //   logger.debug('setauctions', auctions)
-      // })
+      })
     } catch (error) {
-      // handleFeedback({ message: error.message, level: "error" });
+      handleFeedback({ message: error.message, level: "error" });
       logger.warn(error.message);
-      // refreshList()
+      refreshList()
+      
 
     }
   }, [timestamp]);
+
+  const filteredAuctions = selectedCategory
+  ? auctions.filter((auction) => auction.category === selectedCategory)
+  : auctions;
+
+  const clearCategorySelection = () => {
+    setSelectedCategory('');
+  };
 
   const handleBidSubmit = (event) => {
     event.preventDefault();
@@ -64,29 +62,40 @@ function AuctionList({ onNewBid, timestamp }) {
         newBid,
         (error) => {
           if (error) {
-            // handleFeedBack({ message: error.message, level: 'warning'})
+            handleFeedback({ message: error.message, level: 'warning'})
 
             logger.warn(error.message);
 
             return;
           }
-          // handleFeedBack({ message: '!New bid Created¡', level:'success'}
-          // refreshList();
-
+          handleFeedback({ message: '!New bid Created¡', level:'success'})
+          
           onNewBid()
         }
-      );
-    } catch (error) {
-      // handleFeedBack({ message: error.message, level: 'warning' })
-      logger.warn(error.message);
+        );
+      } catch (error) {
+        handleFeedback({ message: error.message, level: 'warning' })
+        logger.warn(error.message);
+        refreshList()
 
     }
   };
 
   return (
-    <div className="test">
+    <div className="auction-list-container">
+      <div className="title-auctionList">
+      <h2 className="title-of-auctionList">Find the art that you like</h2>
+      <SearchAunctions
+          categories={categories}
+          selectedCategory={selectedCategory}
+          onSelectCategory={setSelectedCategory}
+          onClearCategory={clearCategorySelection}
+        />
+      </div>
     <ul className="AuctionList">
-      {auctions && auctions.map((auction) => (
+      {Array.isArray(filteredAuctions) &&
+          filteredAuctions.map((auction) => (
+        
         <li className="RenderAuctionsContainer" key={auction.id}>
           <div className="homePost">
             <div className="OnlyImage">
@@ -95,15 +104,17 @@ function AuctionList({ onNewBid, timestamp }) {
             <div className="tittleAndDescriptionContainer">
               <div className="tittleAndDescription">
                 <h3 className="titleAuction">{auction.title}</h3>
+                <div className="">
                 <p className="auctionDescription">{auction.description}</p>
+                </div>
               </div>
             </div>
             <div className="priceAndButton">
             <form className="priceAndButton" onSubmit={handleBidSubmit} data-auction-id={auction.id}>
               <div className="priceContainer">
-              <p className=""> The start of the offert begins in</p>
+              <p className="">The bidding starts at:</p>
                 <div className="textOffert">
-                  <input className="inputBid" type="number" name="newbid" id="newBid" defaultValue={auction.currentValue + 1}/*onChange={handleChangeInput}*/ />
+                  <input className="inputBid" type="number" name="newbid" id="newBid" defaultValue={auction.currentValue + 1} />
                   <p className="currentValue">{auction.currentValue} €</p>
                 </div>
                 <div className="inputAndButton">
@@ -115,10 +126,13 @@ function AuctionList({ onNewBid, timestamp }) {
             </form>
             </div>
             <div className="endDate">
+              <h6> Category: {auction.category} </h6>
+              <div className="endDateContainer">
               <p>End of auction:</p>
               <p className="DateP">
                 {new Date(auction.finalDate).toISOString().substring(0, 10)}
               </p>
+              </div>
 
               {/* <p>remaining time: {auction.remainingTime}</p> */}
             </div>

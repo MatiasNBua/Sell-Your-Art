@@ -1,103 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
+.footer {
+  width: 100%;
+  height: 68px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
 }
 
-.footerContainer {
-  z-index:5;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 75px;
+.footerContainer{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: hsl(240, 0%, 56%);
-  overflow: hidden;
-  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.12),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.04);
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-nav ul li {
-  list-style: none;
-  /* width: var(--iconSize);
-  height: var(--iconSize); */
-}
-nav ul li a {
-  width: 100%;
   height: 100%;
-  cursor: pointer;
-}
-nav ul li a material-symbols-outlined {
-  fill: rgb(255, 255, 255);
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-  transition: opacity 100s ease;
-  pointer-events: none;
-}
-
-nav ul li a.active material-symbols-outlined {
-  opacity: 1;
-}
-
-nav .tubelight {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  transform: translateX(-50%);
-  width: 45px;
-  height: 5px;
-  border-radius: 5px;
-  background: var(--button);
-  transition: left 400ms ease;
-  z-index: 10;
-}
-nav .tubelight .light-ray {
-  position: absolute;
-  left: -30%;
-  top: 5px;
-  width: 160%;
-  height: 80px;
-  clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.3) -50%,
-    rgba(255, 255, 255, 0) 90%
-  );
-  pointer-events: none;
-}
-
-.material-symbols-outlined{
-  color: var(--iconsFooter)
-}
-
-.support {
-  position: auto;
-  right: 10px;
-  bottom: 10px;
-  padding: 10px;
-  display: flex;
-}
-.support a {
-  margin: 0 10px;
-  color: #222;
-  font-size: 1.8rem;
-  backface-visibility: hidden;
-  transition: all 150ms ease;
-}
-.support a:hover {
-  transform: scale(1.1);
-}
-.footer{
-  position: fiexed;
-  margin-top: 80%; 
+  border-top: 1px solid var(--sd-color-500);
+  background-color: var(--bs-color-800);
 }

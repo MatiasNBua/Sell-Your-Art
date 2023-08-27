@@ -12,15 +12,15 @@ describe('registerUser', () => {
 
     beforeEach(() => User.deleteMany())
 
-    it('SUCCEEDS ON NEW USER', async () => {  // happy path
+    test('SUCCEEDS ON NEW USER', async () => {  // happy path
         const name = 'Matias'
         const lastname = 'Manolo'
-        const email = 'Matias@manolo.com'
+        const email = 'matias@manolo.com'
         const password = '123123123'
         const birth = '1990/11/04'
         const phonenumber = '34666456985'
 
-        const res = await registerUser({name, lastname, email, password, birth, phonenumber})
+        const res = await registerUser(name, lastname, email, password, birth, phonenumber)
 
         expect(res).toBeUndefined()
 
@@ -38,25 +38,26 @@ describe('registerUser', () => {
         expect(user.phonenumber).toEqual(phonenumber)
     })
 
-    it('fails on existing user', async () => {  // unhappy path
-        const name = 'Elarte'
-        const lastname = 'Sano'
-        const email = 'elartes@ano.com'
+    debugger
+    test('fails on existing user', async () => {  // unhappy path
+        const name = 'Elart'
+        const lastname = 'Esanos'
+        const email = 'Elart@esanos.com'
         const password = '123123123'
         const birth = '12/09/1990'
-        const phoneNumber = '3452528080'
+        const phonenumber = '3452528080'
 
 
-        await User.create({ name, lastname, email, password, birth, phoneNumber })
+        await User.create({ name, lastname, email, password, birth, phonenumber })
         
-        try {
-            await registerUser(name, email, password)
-        } catch (error) {
-            expect(error).toBeInstanceOf(DuplicityError)
-            expect(error.message).toEqual('user already exists')
-        }
+        // try {
+        //     await registerUser(name, email, password)
+        // } catch (error) {
+        //     expect(error).toBeInstanceOf(DuplicityError)
+        //     expect(error.message).toEqual('user already exists')
+        // }
 
-        // await expect(registerUser(name, email, password)).rejects.toThrowError(DuplicityError, 'user already exists')
+        await expect(registerUser(name, email, password)).rejects.toThrowError(DuplicityError, 'user already exists')
     })
 
     it('fails on non-string name', () => { // unhappy path

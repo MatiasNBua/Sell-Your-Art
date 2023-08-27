@@ -1,7 +1,7 @@
 .transparent-button{
     background-color: transparent;
     /* border: 1px solid cornflowerblue; */
-    color: var(--menuIcons);
+    color: var(--sd-color-500);
     border-style: none;
     gap: 10px;
     

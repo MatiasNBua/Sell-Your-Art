@@ -9,7 +9,6 @@ import retrieveMessages from '../logics/retrieveMessages'
 
 
 function Chat({ auctionId, context: { handleFeedback } }) {
-    debugger
     const [messages, setMessages] = useState(null)
     const logger = new Loggito('Message Page')
 
@@ -92,49 +91,22 @@ function Chat({ auctionId, context: { handleFeedback } }) {
 
 
     return (<div className="SendEmailContainer">
-        <div className="fomrContainer">
+        <div className="formContainer">
             <div className="toContainer">
                 <h2>To:</h2>
-                <input type="text" />
+                <input className="input-of-messages" type="text" />
             </div>
             <div className="messageContainer">
                 <p>¡Message Here!</p>
-                <input type="text" />
+                <textarea className="textArea-of-messages" type="text" />
             </div>
-            <button> Send Message</button>
+
+            <div className="button-container">
+                <button className='send-message'> Send Message</button>
+            </div>
         </div>
     </div>
     );
 }
 
 export default withContext(Chat)
-
-
-  // <div className="chatContainer">
-        //   {/* <button className="refresh" onClick={onRefreshChat}>
-        //     Refresh Chat!
-        //   </button> */}
-        //   <ul className="chat">
-        //     {messages &&
-        //       messages.map((message) => (
-        //         <li className="message" key={message.id}>
-        //           <p>{message.text}</p>
-        //           <p className="date">{new Date(message.sendAt).toDateString()}</p>
-        //         </li>
-        //       ))}
-        //   </ul>
-        //   <div className="footer">
-        //     <form onSubmit={onFormSubmit}>
-        //       <input
-        //         type="text"
-        //         className="text_input"
-        //         placeholder="Message..."
-        //         name="text"
-        //         id="text"
-        //       />
-        //       <button className="sendButton" type="submit">
-        //         send
-        //       </button>
-        //     </form>
-        //   </div>
-        // </div>

@@ -1,46 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 :root {
-  background: rgb(41, 36, 36);
-  --color: rgb(255, 255, 255);
-  --input: rgb(148, 148, 148);
-  --button: #e67568;
-  --AccColor: rgb(128, 131, 131,0.12);
-  --borderAccount: rgb(122, 199, 189);
-  --headerColor: black;
-  --menuIcons: white;
-  --conainerAuction: black;
-  --iconsFooter: white;
-  --auctionDescription: rgb(255, 255, 255,0.65); 
+  font-family: 'Roboto', sans-serif;
+  background: var(--bs-color-600);
+  
+  --background-input: #F0F0F0;
+  --bs-color-100: #FAFAFA;
+  --bs-color-600: #979797;
+  --bs-color-800: #818181;
+  --bg-acutionList: #DEDEDE;
+  
+  --pr-blue-300: #62B8FC;
+  --pr-blue-800: #0968C8;
+  --textArea-text: #334D90;
+
+  --sd-color-900: #122359;
+  --sd-color-800: #F5F5F5;
+  --sd-color-500: #F0F0F0;
+  
+  --pink-900: #95006C;
 
 
 
-  --oposite: rgb(255, 255, 255);
-  --color-imput: rgb(255, 255, 255);
 }
 
 :root.light {
-  background: rgb(154, 203, 218);
+  background: var(--bs-color-100);
+
+  --background-input: #F0F0F0;
+  --bs-color-100: #FAFAFA;
+  --bs-color-600: #979797;
+  --bs-color-800: #FAFAFA;
+  
+  --pr-blue-300: #62B8FC;
+  --pr-blue-800: #0968C8;
+  --textArea-text: #334D90;
+
+  --sd-color-900: #122359;
+  --sd-color-800: #1D3370;
+  --sd-color-500: #334D90;
+  
+  --pink-900: #95006C;
+  
   --color: rgb(0, 0, 0);
   --input: rgb(0, 0, 0);
   --button: #803d3d;
-  --AccColor: rgba(138, 138, 138, 0.25);
-  --borderAccount: rgb(122, 199, 189);
-  --headerColor: rgb(185, 219, 211);
-  --menuIcons: black;
-  --conainerAuction: rgb(255, 255, 255);
-  --iconsFooter: black;
-  --auctionDescription: black;
-
-  --oposite: rgb(0, 0, 0);
-  --back-color: rgb(255, 255, 255);
-  --back-color-note: rgb(55, 211, 177);
-  --color-imput: rgb(194, 56, 56);
 }
 
 * {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -49,26 +61,73 @@ html {
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  color: var(--sd-color-500);
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 650;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* h6{
+  font-size: 24px;
+  font-weight: 500;
+} */
 
 label {
   font-size: 24px;
-  color: var(--color)
+  color: var(--sd-color-800);
+  padding-left: 12px;
 }
 
 input {
-  background-color: transparent;
+  background: var(--background-label);
+  color: var(--bs-color-imput);
+  padding: 8px 18px;
+  border-radius: 24px;
   border: none;
-  border-bottom: 1px solid var(--color);
-  -webkit-text-fill-color: var(--input);
+  outline: none;
 }
 
-.button {
-  background-color: var(--button);
+input:focus{
+  border: 1px solid var(--pr-blue-300) ;
+}
+
+button {
+  background: transparent;
   border: none;
-  padding: 8px;
-  border-radius: 30px;
-  width: 140px;
-  color: white
+  cursor: pointer;
+}
+
+li{
+  list-style-type: none;
 }
 
 .buttonLogin:hover {
@@ -79,20 +138,43 @@ input {
 
 .anchor {
   text-decoration: none;
-  color: white;
 }
 
-.form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 45px;
+    font-weight: 700;
+  }
 
-.form__field {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  color: var(--oposite);
+  h2 {
+    font-size: 35px;
+    font-weight:600;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
 }

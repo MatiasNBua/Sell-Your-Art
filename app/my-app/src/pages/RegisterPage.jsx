@@ -75,41 +75,45 @@ function RegisterPage({ onLinkClick, onRegisterFormSubmit, context: { handleFeed
     logger.info('return')
 
     return <main className="register-page">
-        <form className="form" onSubmit={handleRegisterFormSubmit}>
+        <div className="titleOfRegister">
+        <h1 className='tittle-of-register'>Create an account</h1>
+        </div>
+
+        <form className="form-register" onSubmit={handleRegisterFormSubmit}>
             <div className="form__field">
-                <label htmlFor="name">Register</label>
+                <label htmlFor="name">Name</label>
                 <input className="input" type="text" name="name" placeholder="Name" id="name" />
             </div>
 
             <div className="form__field">
-                <label htmlFor="lastname"></label>
+                <label htmlFor="lastname">Lastname</label>
                 <input className="input" type="text" name="lastname" placeholder="Lastname" id="lastname" />
             </div>
 
             <div className="form__field">
-                <label htmlFor="email"></label>
+                <label htmlFor="email">Email</label>
                 <input className="input" type="email" name="email" placeholder="Email" id="email" />
             </div>
 
             <div className="form__field">
-                <label htmlFor="password"></label>
+                <label htmlFor="password">Password</label>
                 <input className="input" type="password" name="password" placeholder="Password" id="password" />
             </div>
 
             <div className="form__field">
-                <label htmlFor="birth"></label>
+                <label htmlFor="birth">Birth</label>
                 <input className="input" type="date" /*max={today}*/ name="birth" placeholder="Birth" id="birth" />
             </div>
 
             <div className="form__field">
-                <label htmlFor="phonenumber"></label>
+                <label htmlFor="phonenumber">Phonenumber</label>
                 <input className="input" type="phonenumber" name="phonenumber" placeholder="Phonenumber" id="phonenumber" />
             </div>
 
 
             <div className="buttons-register">
                 <button className="button" type="submit">Register</button>
-                <a className="anchor" href="login" onClick={handleLinkClick}>Login</a>
+                <a className="anchor" href="login" onClick={handleLinkClick}><b> Already have an account? </b> </a>
             </div>
 
         </form>

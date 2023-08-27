@@ -15,7 +15,7 @@ function retrieveAuction(userId) {
 
       return Auction.find(
         { finalDate: { $gte: new Date(Date.now()) } },
-        "author title description value image finalDate currentValue"
+        "author title category description value image finalDate currentValue"
       )
         .lean()
         .catch((error) => {
@@ -44,7 +44,6 @@ function retrieveAuction(userId) {
       //   auctions.forEach(() => {
       //     delete auction.bids;
       //   });
-
       return auctions;
     });
 }

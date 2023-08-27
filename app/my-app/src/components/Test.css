@@ -1,0 +1,24 @@
+.three-dots-button {
+    background: none;
+    border: none;
+    padding: 4px 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--sd-color-500);
+    border-radius: 50%;
+    margin: 2px 0;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .three-dots-button:hover .dot{
+    background-color: gray; /* Cambia el color al hacer hover */
+  }
+  

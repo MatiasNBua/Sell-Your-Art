@@ -1,23 +1,30 @@
-import IconButton from './IconButton'
-import Loggito from '../utils/Loggito'
+import React from 'react';
 
-function SearchAuctions({ onQuery }) {
-    const logger = new Loggito('Search')
+import './SearchAuctions.css'
 
-    const handleSubmit = event => {
-        event.preventDefault()
-
-        const query = event.target.query.value
-
-        onQuery(query)
-    }
-
-    logger.info('return')
-
-    return <form className="container container--row" onSubmit={handleSubmit}>
-        <input className="inputSearch" type="text" name="query"/>
-        <IconButton text="search" />
-    </form>
+function CategoryFilter({ categories, selectedCategory, onSelectCategory, onClearCategory }) {
+  return (
+    <div className="category-filter">
+      <span>Filter by Category: </span>
+      <div className="buttonsContainer">
+        <button
+          className={`${!selectedCategory ? 'selected' : ''} category-button`}
+          onClick={() => onClearCategory()}
+        >
+          All
+        </button>
+        {categories.map((category) => (
+          <button
+            key={category}
+            className={`${ category === selectedCategory ? 'selected' : ''} category-button`}
+            onClick={() => onSelectCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default SearchAuctions
+export default CategoryFilter;

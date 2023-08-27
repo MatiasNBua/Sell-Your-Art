@@ -20,7 +20,6 @@ function authenticateUser(email, password, callback) {
     const xhr = new XMLHttpRequest()
 
     // response
-    debugger
     xhr.onload = function () {
         const status = xhr.status
 

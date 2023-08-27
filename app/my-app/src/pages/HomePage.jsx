@@ -89,18 +89,19 @@ function HomePage({ onLogoutClick, context: { handleFeedback }, }) {
 
     logger.info('return')
   }
-
-  const refreshList = () => setTimestamp(Date.now())
-
+  
+  function refreshList () {
+    setTimestamp(Date.now())
+  }
   return <div className="Home">
 
     <header className="headerBanner">
-      <Header onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick}>
-        <Filter  />
-      </Header>
+      <Header onLogoutClick={onLogoutClick} onSettingClick={handleSettingClick}/>
+        {/* <Filter  /> */}
+      
     </header>
 
-    <body>
+    <body className='body-container'>
     <Routes>
       <Route path="/" element={<AuctionList timestamp={timestamp} onNewBid={refreshList} />} />
       <Route path="profile" element={<Profile />} />

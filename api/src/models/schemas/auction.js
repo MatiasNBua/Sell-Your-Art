@@ -14,6 +14,11 @@ const auction = new Schema({
         default: ''
     },
 
+    category: {
+        type: String,
+        required: true,
+    },
+
     description: {
         type: String,
         default: '',
@@ -48,8 +53,6 @@ const auction = new Schema({
         default: Date.now,
 
     },
-
-
 })
 
 module.exports = auction

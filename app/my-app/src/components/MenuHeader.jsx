@@ -15,17 +15,17 @@ function Menu({ view, onLogoutClick, onSettingClick, context: { toggleTheme } })
 
     return <div className="SettingsMenuContainer">
         <ul className="menuContainer">
-            {view !== 'settings' && <li className="Menu__item">
-                <IconButton text="light" onClick={toggleTheme} />Themes
+            {view !== 'settings' && <li onClick={toggleTheme} className="Menu__item">
+                <IconButton text="light" /><p> Themes</p>
             </li>}
 
-            <li className="Menu__item">
-                <IconButton text="settings" onClick={handleSettingClick} /> Settings
+            <li className="Menu__item" onClick={handleSettingClick}>
+                <IconButton text="settings" /><p> Settings</p>
             </li>
 
 
-            <li className="Menu__item">
-                <IconButton text="logout" onClick={handleLogoutClick} /> Logout
+            <li className="Menu__item"  onClick={handleLogoutClick}>
+                <IconButton text="logout" /><p> Logout</p> 
             </li>
         </ul>
      

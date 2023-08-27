@@ -1,6 +1,6 @@
 const API_URL = process.env.REACT_APP_API_URL;
 
-function createAuction(token,title,description,value,image,finalDate,callback) {
+function createAuction(token,title,category,description,value,image,finalDate,callback) {
   if (typeof token !== "string") throw new TypeError("token is not a string");
   if (token.trim().length === 0) throw new Error("token is empty or blank");
   if (typeof callback !== "function")throw new TypeError("callback is not a function");
@@ -25,7 +25,7 @@ function createAuction(token,title,description,value,image,finalDate,callback) {
   xhr.setRequestHeader("Content-type", "application/json");
 
   // const auction = { title, description, value, image, finalDate };
-  const json = JSON.stringify({ title, description, value, image, finalDate })
+  const json = JSON.stringify({ title, category, description, value, image, finalDate })
 
   xhr.send(json);
 }

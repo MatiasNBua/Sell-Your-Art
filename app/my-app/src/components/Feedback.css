@@ -12,14 +12,15 @@
   
   .Feedback__box {
     position: absolute;
-    height: 80px;
+    height: 140px;
     width: 300px;
-    border: 1px solid #bfd7ea;
+    border: 1px solid var(--sd-color-500);
     border-radius: 12px;
     align-items: center;
     display: flex;
     justify-content: space-around;
-    box-shadow: 4px 4px 13px rgb(255 255 255)
+    flex-direction: column;
+    box-shadow: 0px 8px 8px rgb(255 255 255);
   }
   
   .Feedback--error > .Feedback__box {

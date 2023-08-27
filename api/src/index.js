@@ -7,7 +7,6 @@ const cors = require('cors')
 const { name, version } = require('../package.json')
 const { env: { MONGO_URL, PORT } } = process
 
-    debugger
 connect(MONGO_URL)
  
     .then(() => {

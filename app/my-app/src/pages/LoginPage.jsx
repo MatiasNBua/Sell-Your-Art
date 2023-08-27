@@ -1,8 +1,13 @@
 import Loggito from '../utils/Loggito'
 import authenticateUser from '../logics/authenticateUser'
 import withContext from '../utils/withContext'
+import iconEye from '../assets/icon-eye.svg'
+import Button from '../components/Button'
 import './LoginPage.css'
-import { GoogleLogin } from '@react-oauth/google';
+
+// import { GoogleLogin } from '@react-oauth/google';
+
+
 // import { useGoogleLogin } from '@react-oauth/google';
 // import { useState } from 'react';
 
@@ -84,22 +89,45 @@ function LoginPage({ onLinkClick, onLogIn, context: { handleFeedback } }) {
     }
 
     return <div className="loginPageContainer">
+
     <main className="login-page">
-        <form className="form" action="https://www.google.com/search" method="get" onSubmit={handleFormSubmit}>
+        <div className="titleOfLogin">
+        <h1 className='tittle-of-login'>Welcome Back!</h1>
+        </div>
+
+        <form className="form-login" action="https://www.google.com/search" method="get" onSubmit={handleFormSubmit}>
             <div className="form__field">
-                <label htmlFor="email">Log in</label>
-                <input className="input" type="email" name="email" placeholder="Email" id="email" />
+                <label htmlFor="email">Email</label>
+                <div className="email-input-container">
+                <input className="input" type="email" name="email" placeholder="Email" id="email" />       
+                </div>
             </div>
 
             <div className="form__field">
-                <label htmlFor="password"></label>
+                <label htmlFor="password">Password</label>
+                <div className="password-input-container">
                 <input className="input" type="password" name="password" placeholder="Password" id="password" />
+                <img className='password-eye-icon' src={iconEye} alt="" />
+                </div>
             </div>
+
+            <div className="forgot-password">
+                <a className='forgotYourPassword' href="">Forgot the password?</a>
+            </div>
+
             <div className='buttons-login'>
-                <button className="button" type="submit">Login</button>
-                <a className="anchor" href="register" onClick={handleLinkClick}>Register</a>
+                <Button text={'Log in'}/>
+
+                <a className="anchor" href="register" onClick={handleLinkClick}>
+                    <b>
+                    Create new account!
+                    </b>
+                </a>
             </div>
-            <GoogleLogin
+
+        </form>
+
+            {/* <GoogleLogin
         className="LoginGoogle"
           onSuccess={credentialResponse => {
             console.log(credentialResponse.credential);
@@ -108,8 +136,9 @@ function LoginPage({ onLinkClick, onLogIn, context: { handleFeedback } }) {
             console.log('Login Failed');
           }}
           useOneTap
-          />
-        </form>
+          /> */}
+
+
 
         {/* <button  onClick={handeGoogleLogin}>
           Log In Using Google
